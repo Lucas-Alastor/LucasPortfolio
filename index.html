@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Lucas Henrique, a front-end developer focused on responsive landing pages and clean one-page websites.">
+    <link rel="icon" href="image/lucasicon.png?v=2" type="image/png">
+    <title>Lucas Henrique | Landing Page Developer</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <div class="container">
+        <header class="header-container">
+            <a class="logo" href="#home" aria-label="Back to home">
+                <span>LH</span>
+                <h1>Lucas Henrique</h1>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-container" aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a class="active" href="#home" data-page="0">
+                            <img class="img-icon" src="image/home-img.svg" alt="">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" data-page="1">
+                            <img class="img-icon" src="image/avatar.svg" alt="">
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" data-page="2">
+                            <img class="img-icon" src="image/work.svg" alt="">
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" data-page="3">
+                            <img class="img-icon" src="image/menu-bar.svg" alt="">
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" data-page="4">
+                            <img class="img-icon" src="image/contact.svg" alt="">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-container">
+            <div class="theme-pill">
+                <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="true">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+
+            <div id="pages">
+                <section id="home" class="page active" aria-label="Home page">
+                    <div id="profile-container" class="content-shell hero-grid">
+                        <div class="hero-copy">
+                            <p class="eyebrow">Landing Page Developer</p>
+                            <h2>Lucas Henrique</h2>
+                            <p class="hero-description">
+                                I create modern, responsive landing pages for people and small brands that need a clear online presence, strong visual presentation, and a smooth experience on every screen.
+                            </p>
+                            <div class="hero-actions">
+                                <a class="primary-button" href="#projects" data-page="2">View project</a>
+                                <a class="ghost-button" href="#contact" data-page="4">Contact me</a>
+                            </div>
+                        </div>
+
+                        <div class="circle-profile" aria-label="Profile photo of Lucas Henrique">
+                            <img id="profile" src="image/me2.jpg" alt="Lucas Henrique">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" class="page" aria-label="About me">
+                    <div class="content-shell about-container">
+                        <p class="eyebrow">About me</p>
+                        <h2>Turning ideas into clean, responsive landing pages.</h2>
+                        <p>
+                            I am focused on building landing pages with HTML, CSS, and JavaScript. My goal is to help clients present an idea, product, service, or personal brand through a page that is simple, beautiful, fast, and easy to understand.
+                        </p>
+
+                        <div class="skills-grid" aria-label="Main skills">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                            <span>Landing Pages</span>
+                            <span>UI Layout</span>
+                            <span>Mobile First</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects" class="page" aria-label="Projects">
+                    <div class="content-shell projects-container">
+                        <p class="eyebrow">Projects</p>
+                        <h2>Featured project</h2>
+                        <p class="projects-intro">
+                            A real project I have already built. On desktop, hover over the card to preview it. Click the card to open the project in a new tab.
+                        </p>
+
+                        <div class="project-grid" aria-label="Project list">
+                            <a class="project-card" href="https://gablunae.vercel.app/#home" target="_blank" rel="noopener noreferrer" data-title="UGCS By Gaby" data-description="Responsive portfolio page for a Roblox UGC creator." data-preview="image/gabyportfolio.gif">
+                                <div class="project-media">
+                                    <img src="image/gabyportfolio.gif" alt="GIF preview of the UGCS By Gaby project">
+                                    <div class="project-fallback"><i class="fa-solid fa-gamepad"></i></div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>UGCS By Gaby</h3>
+                                    <p></p>
+                                    <div class="tag-list"><span>Roblox</span><span>UGC</span><span>Portfolio</span></div>
+                                    <span class="project-link-label">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section id="services" class="page" aria-label="Services">
+                    <div class="content-shell services-container">
+                        <p class="eyebrow">Services</p>
+                        <h2>What I can build for you</h2>
+
+                        <div class="services-grid">
+                            <article class="card">
+                                <div class="lines"></div>
+                                <div class="iconBox"><i class="fa-solid fa-code"></i></div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h3>Landing Page Development</h3>
+                                        <p>Modern, responsive one-page websites built with HTML, CSS, and JavaScript, focused on clarity, performance, and visual impact.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="card">
+                                <div class="lines"></div>
+                                <div class="iconBox"><i class="fa-solid fa-gamepad"></i></div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h3>Personal or Brand Pages</h3>
+                                        <p>Simple pages to present a person, brand, product, service, course, creative work, or online idea in a professional way.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="card">
+                                <div class="lines"></div>
+                                <div class="iconBox"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                <div class="content">
+                                    <div class="details">
+                                        <h3>Mobile-First Layouts</h3>
+                                        <p>Layouts planned to look good on phones first, with readable text, comfortable spacing, flexible sections, and no broken mobile experience.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="page" aria-label="Contact">
+                    <div class="content-shell contact-container">
+                        <p class="eyebrow">Contact</p>
+                        <h2>Need a landing page?</h2>
+                        <p>
+                            I build focused landing pages for simple and direct projects. Reach out if you need a page to present your work, service, product, or idea online.
+                        </p>
+
+                        <div class="contact-grid">
+                            <a class="contact-card" href="mailto:951216lucas@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>951216lucas@gmail.com</span>
+                            </a>
+                            <a class="contact-card" href="https://www.linkedin.com/in/lucas-henrique-841a39243/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a class="contact-card" href="https://github.com/Lucas-Alastor" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a class="contact-card" href="http://discordapp.com/users/332772358035210241" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-discord"></i>
+                                <span>Discord</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
